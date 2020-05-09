@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "oclif",
+    "oclif-typescript"
+  ],
+  "rules": {
+    "valid-jsdoc": ["warn", { "requireReturnType": false, "requireParamType": false, "requireReturn": false }],
+  }
+}
