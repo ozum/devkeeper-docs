@@ -47,7 +47,7 @@
     "concat-md": "^0.3.4",
     "execa": "^4.0.1",
     "fs-extra": "^9.0.0",
-    "readmeasy": "^0.1.7",
+    "readmeasy": "^0.2.3",
     "tslib": "^1.11.2",
     "typedoc": "^0.17.6",
     "typedoc-neo-theme": "^1.0.8",
