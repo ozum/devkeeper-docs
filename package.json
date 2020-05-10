@@ -1,7 +1,7 @@
 {
   "name": "devkeeper-docs",
   "description": "README and VuePress generator",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Özüm Eldoğan",
   "keywords": [
     "readme",

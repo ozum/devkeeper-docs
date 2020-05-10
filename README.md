@@ -30,7 +30,7 @@ $ npm install -g devkeeper-docs
 $ devkeeper-docs COMMAND
 running command...
 $ devkeeper-docs (-v|--version|version)
-devkeeper-docs/0.1.2 darwin-x64 node-v14.1.0
+devkeeper-docs/0.1.3 darwin-x64 node-v14.1.0
 $ devkeeper-docs --help [COMMAND]
 USAGE
   $ devkeeper-docs COMMAND
@@ -97,6 +97,8 @@ USAGE
   $ devkeeper-docs readme
 ```
 
+_See code: [lib/commands/readme.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.3/lib/commands/readme.js)_
+
 ## `devkeeper-docs typedoc-html`
 
 Using `typedoc`, creates series of HTML files from TypeScript files
@@ -105,6 +107,8 @@ Using `typedoc`, creates series of HTML files from TypeScript files
 USAGE
   $ devkeeper-docs typedoc-html
 ```
+
+_See code: [lib/commands/typedoc-html.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.3/lib/commands/typedoc-html.js)_
 
 ## `devkeeper-docs typedoc-md`
 
@@ -115,6 +119,8 @@ USAGE
   $ devkeeper-docs typedoc-md
 ```
 
+_See code: [lib/commands/typedoc-md.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.3/lib/commands/typedoc-md.js)_
+
 ## `devkeeper-docs typedoc-single-md`
 
 Using `typedoc`, creates a MarkDown files from TypeScript files
@@ -123,6 +129,8 @@ Using `typedoc`, creates a MarkDown files from TypeScript files
 USAGE
   $ devkeeper-docs typedoc-single-md
 ```
+
+_See code: [lib/commands/typedoc-single-md.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.3/lib/commands/typedoc-single-md.js)_
 
 ## `devkeeper-docs vuepress`
 
@@ -133,6 +141,8 @@ USAGE
   $ devkeeper-docs vuepress
 ```
 
+_See code: [lib/commands/vuepress.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.3/lib/commands/vuepress.js)_
+
 ## `devkeeper-docs vuepress-dev`
 
 Starts VuePress development server.
@@ -141,4 +151,6 @@ Starts VuePress development server.
 USAGE
   $ devkeeper-docs vuepress-dev
 ```
+
+_See code: [lib/commands/vuepress-dev.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.3/lib/commands/vuepress-dev.js)_
 <!-- commandsstop -->
