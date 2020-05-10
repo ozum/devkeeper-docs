@@ -17,6 +17,7 @@ README and VuePress generator
 # Synopsis
 
 `$ npx devkeeper-docs readme`
+
 `$ npx devkeeper-docs vuepress`
 
 # Details
@@ -29,7 +30,7 @@ $ npm install -g devkeeper-docs
 $ devkeeper-docs COMMAND
 running command...
 $ devkeeper-docs (-v|--version|version)
-devkeeper-docs/0.1.1 darwin-x64 node-v14.1.0
+devkeeper-docs/0.1.2 darwin-x64 node-v14.1.0
 $ devkeeper-docs --help [COMMAND]
 USAGE
   $ devkeeper-docs COMMAND
