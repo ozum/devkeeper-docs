@@ -2,7 +2,7 @@
 
 
 
-README and VuePress generator
+Opinionated CLI to generate README and build VuePress. It may be used in CI/CD such as GitHub actions.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -10,6 +10,9 @@ README and VuePress generator
 
 - [Synopsis](#synopsis)
 - [Details](#details)
+  - [README](#readme)
+  - [VuePress](#vuepress)
+- [CLI](#cli)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -18,11 +21,29 @@ README and VuePress generator
 
 `$ npx devkeeper-docs readme`
 
+Build opinionated VuePress
+
 `$ npx devkeeper-docs vuepress`
 
 # Details
 
-CLI to generate README and VuePress. It may be used in CI/CD such as GitHub actions.
+## README
+
+`$ npx devkeeper-docs readme`
+
+* Creates `README.md` from `README.njk` nunjucks template using `readmeasy`.
+* If there is no `README.njk` template, creates one.
+* Adds header with `{% include &quot;module-header&quot; %}` (name, description table of contents, badges). See [`readmeasy`](https://www.npmjs.com/package/readmeasy) for details.
+* Adds API documentation with `{% include &quot;api.md&quot; %}` using [`TypeDoc`](https://typedoc.org/).
+* Adds [`oclif`](https://oclif.io/) CLI tool README parts if `oclif` is used in project.
+
+## VuePress
+
+`$ npx devkeeper-docs vuepress`
+
+Builds VuePress. We suggest you to use [`vuepress-bar`](https://www.npmjs.com/package/vuepress-bar) to easily create VuePress sidabar and top menu.
+
+# CLI
 
 <!-- usage -->
 ```sh-session

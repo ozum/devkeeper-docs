@@ -1,8 +1,6 @@
 import Command from '@oclif/command'
 import execa = require('execa');
-import {writeFile, copy, move} from 'fs-extra'
-import concatMd from 'concat-md'
-import c from './node-bin'
+import {copy, move} from 'fs-extra'
 import typeDocMd from './typedoc-md'
 import typeDocHtml from './typedoc-html'
 
