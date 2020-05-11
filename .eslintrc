@@ -4,6 +4,6 @@
     "oclif-typescript"
   ],
   "rules": {
-    "valid-jsdoc": ["warn", { "requireReturnType": false, "requireParamType": false, "requireReturn": false }],
+    "valid-jsdoc": ["warn", { "requireReturnType": false, "requireParamType": false, "requireReturn": false }]
   }
 }
