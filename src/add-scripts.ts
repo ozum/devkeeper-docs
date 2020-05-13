@@ -26,7 +26,7 @@ export default async function typedocMd(this: Command) {
       packageJson.scripts['docs:build'] = 'devkeeper-docs vuepress'
     }
 
-    await writeJSON(packagePath, packageJson)
+    await writeJSON(packagePath, packageJson, {spaces: 2})
   } catch (error) {
     this.error(error)
   }
