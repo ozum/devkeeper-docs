@@ -1,7 +1,6 @@
 import Command from '@oclif/command'
-import execa = require('execa');
-import {pathExists} from 'fs-extra'
-import c from './node-bin'
+import {pathExists, readJSON, writeJSON} from 'fs-extra'
+import pkgUp from 'pkg-up'
 
 /**
  * Using `typedoc`, creates a series of MarkDown files from TypeScript files.
@@ -11,11 +10,20 @@ import c from './node-bin'
 export default async function typedocMd(this: Command) {
   // rm -rf api-docs-md && typedoc --platform vuepress --plugin typedoc-plugin-example-tag,typedoc-plugin-markdown --excludeExternals --excludePrivate --excludeProtected --theme markdown --readme none --mode file --out api-docs-md && find api-docs-md -name \"index.md\" -exec sh -c 'mv \"$1\" \"${1%index.md}\"index2.md' - {} \\;
   try {
-    await execa('npx', ['npm-add-script', '-k', 'readme', '-v', 'devkeeper-docs readme', '-f'], {stdio: 'inherit', cwd: process.env.$INIT_CWD})
+    const packagePath = await pkgUp({cwd: process.env.$INIT_CWD})
+    if (!packagePath) throw new Error(`Cannot find package.json file in ${process.env.$INIT_CWD}`)
+
+    const packageJson = await readJSON(packagePath)
+
+    if (!packageJson.scripts) packageJson.scripts = {}
+    packageJson.scripts.readme = 'devkeeper-docs readme'
+
     if (await pathExists('docs/.vuepress')) {
-      await execa('npx', ['npm-add-script', '-k', 'docs:build', '-v', 'devkeeper-docs vuepress', '-f'], {stdio: 'inherit', cwd: process.env.$INIT_CWD})
-      await execa('npx', ['npm-add-script', '-k', 'docs:dev', '-v', 'devkeeper-docs vuepress-dev', '-f'], {stdio: 'inherit', cwd: process.env.$INIT_CWD})
+      packageJson.scripts['docs:dev'] = 'devkeeper-docs vuepress-dev'
+      packageJson.scripts['docs:build'] = 'devkeeper-docs vuepress'
     }
+
+    await writeJSON(packagePath, packageJson)
   } catch (error) {
     this.error(error)
   }
