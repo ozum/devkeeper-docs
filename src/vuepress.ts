@@ -15,7 +15,7 @@ export default async function vuepress(this: Command) {
     await Promise.all([typeDocMd, typeDocHtml])
     await Promise.all([move('api-docs-md', 'docs/nav.02.api', {overwrite: true}), move('api-docs-html', 'docs/.vuepress/public/api-site', {overwrite: true})])
     await copy('assets/typedoc/01.typedoc-iframe.md', 'docs/nav.02.api/01.typedoc-iframe.md')
-    await execa('npx', ['vuepress', 'build', 'docs'], {env: {NODE_ENV: 'production'}})
+    await execa('npx', ['vuepress', 'build', 'docs'], {env: {NODE_ENV: 'production'}, stdio: 'inherit'})
   } catch (error) {
     this.error(error)
   }
