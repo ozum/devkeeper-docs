@@ -38,7 +38,6 @@
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "bin/run readme && oclif-dev readme && git add README.md",
     "release": "git push --follow-tags origin master && npm publish",
-    "postinstall": "bin/run add-scripts",
     "readme": "devkeeper-docs readme"
   },
   "dependencies": {
