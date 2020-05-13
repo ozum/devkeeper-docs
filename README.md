@@ -60,6 +60,7 @@ USAGE
 <!-- usagestop -->
 
 <!-- commands -->
+* [`devkeeper-docs add-scripts`](#devkeeper-docs-add-scripts)
 * [`devkeeper-docs autocomplete [SHELL]`](#devkeeper-docs-autocomplete-shell)
 * [`devkeeper-docs help [COMMAND]`](#devkeeper-docs-help-command)
 * [`devkeeper-docs readme`](#devkeeper-docs-readme)
@@ -68,6 +69,17 @@ USAGE
 * [`devkeeper-docs typedoc-single-md`](#devkeeper-docs-typedoc-single-md)
 * [`devkeeper-docs vuepress`](#devkeeper-docs-vuepress)
 * [`devkeeper-docs vuepress-dev`](#devkeeper-docs-vuepress-dev)
+
+## `devkeeper-docs add-scripts`
+
+Creates Readme from TypeScript and README template using readmeasy and Typeoc.
+
+```
+USAGE
+  $ devkeeper-docs add-scripts
+```
+
+_See code: [lib/commands/add-scripts.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.13/lib/commands/add-scripts.js)_
 
 ## `devkeeper-docs autocomplete [SHELL]`
 

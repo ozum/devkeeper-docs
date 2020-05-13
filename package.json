@@ -38,7 +38,7 @@
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "bin/run readme && oclif-dev readme && git add README.md",
     "release": "git push --follow-tags origin master && npm publish",
-    "readme": "devkeeper-docs readme"
+    "postinstall": "bin/run add-scripts"
   },
   "dependencies": {
     "@oclif/command": "^1.6.1",
@@ -48,6 +48,7 @@
     "concat-md": "^0.3.4",
     "execa": "^4.0.1",
     "fs-extra": "^9.0.0",
+    "pkg-up": "^3.1.0",
     "readmeasy": "^0.2.3",
     "tslib": "^1.11.2",
     "typedoc": "^0.17.6",
