@@ -51,7 +51,7 @@ $ npm install -g devkeeper-docs
 $ devkeeper-docs COMMAND
 running command...
 $ devkeeper-docs (-v|--version|version)
-devkeeper-docs/0.1.12 darwin-x64 node-v14.1.0
+devkeeper-docs/0.1.13 darwin-x64 node-v14.1.0
 $ devkeeper-docs --help [COMMAND]
 USAGE
   $ devkeeper-docs COMMAND
@@ -118,7 +118,7 @@ USAGE
   $ devkeeper-docs readme
 ```
 
-_See code: [lib/commands/readme.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.12/lib/commands/readme.js)_
+_See code: [lib/commands/readme.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.13/lib/commands/readme.js)_
 
 ## `devkeeper-docs typedoc-html`
 
@@ -129,7 +129,7 @@ USAGE
   $ devkeeper-docs typedoc-html
 ```
 
-_See code: [lib/commands/typedoc-html.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.12/lib/commands/typedoc-html.js)_
+_See code: [lib/commands/typedoc-html.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.13/lib/commands/typedoc-html.js)_
 
 ## `devkeeper-docs typedoc-md`
 
@@ -140,7 +140,7 @@ USAGE
   $ devkeeper-docs typedoc-md
 ```
 
-_See code: [lib/commands/typedoc-md.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.12/lib/commands/typedoc-md.js)_
+_See code: [lib/commands/typedoc-md.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.13/lib/commands/typedoc-md.js)_
 
 ## `devkeeper-docs typedoc-single-md`
 
@@ -151,7 +151,7 @@ USAGE
   $ devkeeper-docs typedoc-single-md
 ```
 
-_See code: [lib/commands/typedoc-single-md.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.12/lib/commands/typedoc-single-md.js)_
+_See code: [lib/commands/typedoc-single-md.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.13/lib/commands/typedoc-single-md.js)_
 
 ## `devkeeper-docs vuepress`
 
@@ -162,7 +162,7 @@ USAGE
   $ devkeeper-docs vuepress
 ```
 
-_See code: [lib/commands/vuepress.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.12/lib/commands/vuepress.js)_
+_See code: [lib/commands/vuepress.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.13/lib/commands/vuepress.js)_
 
 ## `devkeeper-docs vuepress-dev`
 
@@ -173,5 +173,5 @@ USAGE
   $ devkeeper-docs vuepress-dev
 ```
 
-_See code: [lib/commands/vuepress-dev.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.12/lib/commands/vuepress-dev.js)_
+_See code: [lib/commands/vuepress-dev.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.13/lib/commands/vuepress-dev.js)_
 <!-- commandsstop -->
