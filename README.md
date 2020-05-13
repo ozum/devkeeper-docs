@@ -79,6 +79,8 @@ USAGE
   $ devkeeper-docs add-scripts
 ```
 
+_See code: [lib/commands/add-scripts.js](https://github.com/ozum/devkeeper-docs/blob/v0.1.8/lib/commands/add-scripts.js)_
+
 ## `devkeeper-docs autocomplete [SHELL]`
 
 display autocomplete installation instructions
