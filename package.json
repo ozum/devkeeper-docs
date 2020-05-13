@@ -1,7 +1,7 @@
 {
   "name": "devkeeper-docs",
   "description": "Opinionated CLI to generate README and build VuePress. It may be used in CI/CD such as GitHub actions.",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "author": "Özüm Eldoğan",
   "keywords": [
     "readme",
